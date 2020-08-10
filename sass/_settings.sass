@@ -1,0 +1,33 @@
+*
+  box-sizing: border-box
+body 
+  font-family: 'Muli', sans-serif
+  // отключения скролла за модальным окном
+body.lock
+  overflow: hidden
+  // _______
+.container
+  max-width: 1110px
+  margin: auto
+button, input
+  outline: none
+button 
+  cursor: pointer
+  border: none
+img 
+  max-width: 100%
+a
+  text-decoration: none
+
+
+
+// настройка вывода модального окна
+// настройка для скрытия картинки/открытия карты
+.map
+  &__image
+    &_script
+      display: none
+  &__google
+    display: none
+    &_googleScript
+      display: block

@@ -1,0 +1,112 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+
+    
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+    width: 92%
+  .header
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: #fff
+      z-index: 3
+    &__body
+      z-index: 2
+      display: flex
+      justify-content: space-between
+      height: 50px
+      align-items: center
+    &-menu
+      position: fixed
+      top: -100%
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: tomato
+      padding: 70px 0 0 0
+      transition: all 0.4s ease 0s
+      overflow: auto
+      &__list
+        display: block
+        padding: 0
+        text-align: center
+        overflow: auto
+      &__item
+        list-style: none
+        margin-bottom: 20px
+      &__link
+        text-decoration: none
+        list-style: none
+        color: black
+      &--active
+        top: 0
+    &__logo
+      flex: 0 0 120px
+      z-index: 10
+      position: relative
+    &-burger
+      display: block
+      position: relative
+      width: 30px
+      height: 20px
+      z-index: 3
+      &:before, &:after
+        content: ''
+        background-color: black
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+      &:before
+        top: 0
+      &:after
+        bottom: 0
+      &__line
+        position: absolute
+        width: 100%
+        height: 2px
+        background-color: black
+        left: 0
+        top: 9px
+        transition: all 0.4s ease 0s
+      &--active
+        &:before
+          transform: rotate(45deg)
+          top: 9px
+          transition: all 0.4s ease 0s
+        &:after
+          transform: rotate(-45deg)
+          bottom: 9px
+          transition: all 0.4s ease 0s
+        &__line
+          transform: scale(0)
+
+          
+        
+        
+        
+        
+
+  
+@media (max-width: 576px) and (min-width: 320px)
+  .container
+    max-width: 95%
+ 
+@media (max-width: 320px)
+  .container
+    max-width: 92%
+ 
