@@ -7,12 +7,6 @@
     margin-left: 3%
     border-radius: 8px
     position: relative
-    background: url(../../img/main/imagebg.png) no-repeat
-    background-size: cover
-    background-position: left 260px bottom 65%
-    background-color: #E8EAE9
-    border-radius: 8px
-    z-index: 1
     &:after
       content: ''
       position: absolute
@@ -22,6 +16,20 @@
       bottom: 0
       background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%)
       z-index: -3
+      border-radius: 8px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: url(../../img/main/imagebg.png) no-repeat
+      background-size: cover
+      background-position: left 250px bottom 63%
+      background-color: #E8EAE9
+      z-index: -4
+      border-radius: 8px
   &-discription
     padding: 62px 0 46px 107px
     max-width: 652px

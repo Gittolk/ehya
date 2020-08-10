@@ -2,9 +2,15 @@
   .header
     &-container
       max-width: 960px
-      
   .container
     max-width: 960px
+  .main
+    &-wrapper
+      &:before
+        content: ''
+        background: url(../../img/main/imagebg.png) no-repeat
+        background-position: left 300px bottom 60%
+        background-color: #E8EAE9
 
     
 @media (max-width: 992px)
@@ -15,7 +21,16 @@
       max-width: 700px
   .main
     &-wrapper
-
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: url(../../img/main/imagebg.png) no-repeat
+        background-position: left 100px bottom 60%
+        background-color: #E8EAE9
     &-discription
       padding: 62px 0 46px 40px
       max-width: 550px
@@ -139,23 +154,26 @@
       max-width: 728px
     &-wrapper
       margin-top: 90px
-      background-position: left 0px bottom 60%
-      background-size: 150%
-      &:after
+      // &:after
+      //   content: ''
+      //   position: absolute
+      //   left: 10px
+      //   top: 0
+      //   right: 0
+      //   bottom: 0
+      //   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%)
+      //   z-index: -3
+      //   background-image: url(../../img/main/background.png) no-repeat
+      //   left: 0
+      //   top: 0
+      //   right: 0
+      //   bottom: 0
+      &:before
         content: ''
-        position: absolute
-        left: 10px
-        top: 0
-        right: 0
-        bottom: 0
-        background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%)
-        z-index: -3
-        background-image: url(../../img/main/background.png) no-repeat
-        left: 0
-        top: 0
-        right: 0
-        bottom: 0
-        border-radius: 8px
+        background: url(../../img/main/bg-image-main.png) no-repeat
+        background-position: left -400px bottom 60%
+        background-color: #E8EAE9
+        z-index: -2
     &-discription
       padding: 36px 0 44px 28px
       max-width: 500px
@@ -179,6 +197,12 @@
       max-width: 407px
 @media (max-width: 700px)
   .main
+    &-wrapper
+      &:before
+        content: ''
+        background: url(../../img/main/imagebg.png) no-repeat
+        background-position: left -40px bottom 58%
+        background-color: #E8EAE9
     &-discription
       display: flex
       flex-direction: column
@@ -209,25 +233,28 @@
             //  ===================================================================header
   .main
     &-wrapper
-      margin-top: -200px
+      margin-top: 0px
       margin-right: 0
       margin-left: 0       
       border-radius: 0
       background-size: cover
       background-position: center
       &:after
-        display: none
-      &:before
         content: ''
         position: absolute
         left: 0px
-        top: -200px
+        top: 0
         right: 0
         bottom: 0
         background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
-        z-index: -3
+        z-index: -1
+      &:before
+        content: ''
+        background: url(../../img/main/imagebg.png) no-repeat
+        background-position: center
+        background-color: #E8EAE9
     &-discription
-      padding: 550px 20px 36px 20px
+      padding: 400px 20px 36px 20px
       display: flex
       flex-direction: column
       align-items: center
