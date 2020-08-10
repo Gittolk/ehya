@@ -92,6 +92,7 @@ $(document).ready(function () {
     $(".header-burger").toggleClass("header-burger--active");
     $(".header-burger__line").toggleClass("header-burger--active__line");
     $(".header-menu").toggleClass("header-menu--active");
+    $(".header__logo").toggleClass("header__logo--active");
     $("body").toggleClass("lock");
   });
 });
