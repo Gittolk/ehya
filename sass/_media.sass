@@ -13,6 +13,12 @@
   .header
     &-container
       max-width: 700px
+  .main
+    &-wrapper
+
+    &-discription
+      padding: 62px 0 46px 40px
+      max-width: 550px
 @media (max-width: 768px)
   .header
     &-container
@@ -45,10 +51,10 @@
       top: -100%
       left: 2.5%
       width: 95%
-      height: 100%
+      // height: 100%
       background-color: #fff
       padding: 26px 0 0 0
-      transition: all 0.4s ease 0s
+      transition: all 0.6s ease 0s
       overflow: auto
       z-index: 30
       &__list
@@ -110,7 +116,7 @@
         background-color: $secondary-color
         left: 0
         top: 8px
-        transition: all 0.4s ease 0s
+        transition: all 0.6s ease 0s
         border-radius: 5px
       &--active
         position: absolute
@@ -119,11 +125,11 @@
         &:before
           transform: rotate(45deg)
           top: 7px
-          transition: all 0.4s ease 0s
+          transition: all 0.6s ease 0s
         &:after
           transform: rotate(-45deg)
           bottom: 8px
-          transition: all 0.4s ease 0s
+          transition: all 0.6s ease 0s
         &__line
           transform: scale(0) 
           // конец стилей для header============================================================
@@ -171,7 +177,26 @@
       margin-bottom: 40px
     &-links
       max-width: 407px
-
+@media (max-width: 700px)
+  .main
+    &-discription
+      display: flex
+      flex-direction: column
+      max-width: 400px
+      align-items: center
+    &__title
+      font-size: 34px
+      line-height: 40px
+      text-align: center
+    &__text
+      text-align: center
+    &__hashtag
+      align-self: start
+    &-links
+      max-width: 300px
+      flex-wrap: wrap
+      justify-content: space-around
+      
 @media (max-width: 576px) and (min-width: 320px)
   // стили для header
   .header
@@ -181,7 +206,59 @@
       &--active
         right: 29px
         top: 29px
-//  ===================================================================header
+            //  ===================================================================header
+  .main
+    &-wrapper
+      margin-top: -200px
+      margin-right: 0
+      margin-left: 0       
+      border-radius: 0
+      background-size: cover
+      background-position: center
+      &:after
+        display: none
+      &:before
+        content: ''
+        position: absolute
+        left: 0px
+        top: -200px
+        right: 0
+        bottom: 0
+        background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+        z-index: -3
+    &-discription
+      padding: 550px 20px 36px 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 576px
+    &__hashtag
+      padding: 2px 26px
+      line-height: 20px
+      align-self: center
+    &__title
+      text-align: center
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 40px
+    &__text
+      text-align: center
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 24px
+    &__button
+      min-width: 233px
+      margin-bottom: 22px
+    &-links
+      flex-wrap: wrap
+      max-width: 290px
+      justify-content: center
+      line-height: 22px
+    &-link
+      &__1,&__2
+        margin-bottom: 16px
+      &__1
+        margin-right: 16px  
 @media (max-width: 320px)
   .container
     max-width: 92%
