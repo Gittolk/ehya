@@ -106,4 +106,28 @@ $(document).ready(function () {
       $(this).addClass("tabs__item--active");
     });
   });
+
+  var mySwiper = new Swiper(".reviews-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    touchMoveStopPropagation: false,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+  $(".reviews-slider").mousemove(function (event) {
+    console.log("123");
+    mySwiper.autoplay.stop();
+  });
+  $(".reviews-slider").mouseout(function (event) {
+    console.log("555");
+    mySwiper.autoplay.start();
+  });
 });
