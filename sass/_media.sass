@@ -25,6 +25,26 @@
       max-width: 960px
     &-images
       justify-content: space-around
+  .fashion
+    &-container
+      max-width: 960px
+    &-content
+      flex-wrap: wrap
+    &-story
+      max-width: 510px
+      text-align: center
+      margin: 0 auto
+      margin-bottom: 108px
+    &-slider
+      margin: 0 auto
+    .slider
+      &-button
+        &--next
+          top: 234px
+          left: 51%
+        &--prev
+          top: 234px
+          left: 41%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -258,6 +278,17 @@
       margin-bottom: 20px
     &__text
       margin-bottom: 46px
+  .fashion
+    .slider
+      &-button
+        &--next
+          top: 234px
+          left: 51%
+        &--prev
+          top: 234px
+          left: 40%
+
+    
 @media (max-width: 700px)
   .main
     &-wrapper
@@ -289,8 +320,27 @@
   .reviews
     &-container
       max-width: 93%
-
-      
+  .swiper
+    &-slide
+      &__item
+        flex-direction: column
+      &__box
+        align-self: center
+        
+  .fashion
+    .slider
+      &-button
+        &--next
+          top: 234px
+          left: 52%
+        &--prev
+          top: 234px
+          left: 40%
+  .swiper
+    &-slide
+      &__box
+        margin-bottom: 24px
+        
 @media (max-width: 576px) and (min-width: 320px)
   // стили для header
   .header
@@ -454,7 +504,63 @@
       margin: 0 auto
       margin-bottom: 50px
     &-wrapper
-      margin-bottom: 93px
+      margin-bottom: 64px
+  .fashion
+    &-container
+      max-width: 95%
+    &-wrapper
+      padding-top: 48px
+    &__hashtag
+      padding: 2px 26px
+      line-height: 20px
+      align-self: center
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+    &-slider
+      max-width: 95%
+    .slider
+      &-button
+        &--next
+          top: 195px
+          left: 52%
+        &--prev
+          top: 195px
+          left: 39%
+  .swiper
+    &-slide
+      &__box
+        width: 280px
+        height: 407px
+        margin-bottom: 60px
+      &__discription
+        padding: 20px
+        width: 270px
+      &__about
+        font-style: normal
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        max-width: 270px
+      &__image
+        width: 270px
+@media (max-width: 460px) and (min-width: 320px)
+  .fashion
+    .slider
+      &-button
+        &--next
+          top: 215px
+          left: 55%
+        &--prev
+          top: 215px
+          left: 28%
 @media (max-width: 320px)
   .container
     max-width: 92%
