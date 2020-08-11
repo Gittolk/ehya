@@ -95,4 +95,15 @@ $(document).ready(function () {
     $(".header__logo").toggleClass("header__logo--active");
     $("body").toggleClass("lock");
   });
+  $(document).ready(function () {
+    var tabsItem = $(".tabs__item");
+    var contentItem = $(".tranding-images");
+    tabsItem.on("click", function (event) {
+      var activeContent = $(this).attr("data-target");
+      tabsItem.removeClass("tabs__item--active");
+      contentItem.removeClass("tranding-images--active");
+      $(activeContent).addClass("tranding-images--active");
+      $(this).addClass("tabs__item--active");
+    });
+  });
 });

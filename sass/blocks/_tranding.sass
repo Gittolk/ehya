@@ -1,0 +1,103 @@
+.tranding
+  &-container
+    max-width: 1135px
+    margin: 0 auto
+  &-wrapper
+    margin-bottom: 135px
+  &-navigation
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 50px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: $title-color
+  &-images
+    justify-content: space-between
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+  &-card
+    width: 260px
+    height: 441px
+    margin-bottom: 50px
+    &__title
+      margin: 0
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      color: $title-color
+      margin-left: 10px
+    &__price
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: $font-color
+  &-cardsell
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 240px
+    margin: 0 auto
+  &-images
+    display: none
+  &-images
+    &--active
+      display: flex
+  &-box
+    height: 350px
+    width: 260px
+    margin-bottom: 20px
+
+  &__image
+    object-fit: cover
+    width: 100%
+    height: 100%
+    border-radius: 8px
+
+  &-more
+    background-color: #1565D8
+    height: 350px
+    border-radius: 8px
+    padding: 120px 74px 104px 74px
+    &__collection
+      display: flex
+      flex-direction: column
+      align-content: center
+    &__text
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #fff
+    &__plus
+      margin-bottom: 25px
+.tabs
+  display: flex
+  width: 370px
+  justify-content: space-between
+  &__item
+    cursor: pointer
+    color: $font-color
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    border: 1px solid transparent
+    transition: all 0.3s ease 0s
+  &__item
+    &--active
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $title-color
+      transition: all 0.3s ease 0s
+

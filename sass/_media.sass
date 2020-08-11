@@ -20,7 +20,11 @@
       justify-content: center
     &-discription
       max-width: 100%
-    
+  .tranding
+    &-container
+      max-width: 960px
+    &-images
+      justify-content: space-around
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -42,6 +46,11 @@
     &-discription
       padding: 62px 0 46px 40px
       max-width: 550px
+  .tranding
+    &-container
+      max-width: 700px
+    &-navigation
+      flex-direction: column
 @media (max-width: 768px)
   .header
     &-container
@@ -88,6 +97,7 @@
         margin-left: 5%
         margin-right: 5%
         align-items: flex-start
+        margin-bottom: 5%
       &__item
         list-style: none
         margin-bottom: 20px
@@ -219,6 +229,21 @@
     &__text
       margin-top: 0
       margin-bottom: 30px
+  .tranding
+    &-container
+      max-width: 610px
+    &-navigation
+      flex-direction: column
+    &-box
+      width: 280px
+      height: 350px
+    &-cardsell
+      max-width: 260px
+      margin-left: 10px
+    &-images
+      justify-content: space-around
+  .tabs
+    max-width: 100%
 @media (max-width: 700px)
   .main
     &-wrapper
@@ -344,9 +369,66 @@
         margin-right: 14px
     &__title
       font-size: 28px
+      line-height: 36px
     &-href
       align-items: center
       margin: 0 auto
+  .tranding
+    &-container
+      max-width: 93%
+    &-navigation
+      margin-bottom: 36px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      margin-top: 0
+      margin-bottom: 24px
+    &-card
+      width: 140px
+      height: 234px
+      margin-bottom: 20px
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        margin: 0
+      &__sell
+        width: 16px
+        height: 16px
+      &__price
+        margin-right: 10px
+        font-size: 14px
+        line-height: 24px
+    &-box
+      height: 170px
+      width: 140px
+      margin-bottom: 13px
+    &-cardsell
+      justify-content: start
+      align-items: center
+      margin: 0
+    &__image
+      width: 100%
+      object-fit: cover
+    &-more
+      background-color: #1565D8
+      height: 170px
+      border-radius: 8px
+      padding: 40px 23px 29px 23px
+      &__text
+        font-size: 20px
+        line-height: 24px
+      &__plus
+        margin-bottom: 20px
+  .tabs
+    &__item
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
 @media (max-width: 320px)
   .container
     max-width: 92%
