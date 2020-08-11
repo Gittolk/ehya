@@ -4,8 +4,8 @@ $(document).ready(function () {
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: ".hotel-slider__button--next",
-      prevEl: ".hotel-slider__button--prev",
+      nextEl: "slider-button--next",
+      prevEl: "slider-button--prev",
     },
     keyboard: {
       enabled: true,
@@ -13,13 +13,13 @@ $(document).ready(function () {
     },
   });
 
-  var reviewsSlider = new Swiper(".reviews-slider", {
+  var fashionSlider = new Swiper(".fashion-slider", {
     // Optional parameters
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: ".reviews-slider__button--next",
-      prevEl: ".reviews-slider__button--prev",
+      nextEl: ".slider-button--next",
+      prevEl: ".slider-button--prev",
     },
     keyboard: {
       enabled: true,
@@ -119,7 +119,7 @@ $(document).ready(function () {
       type: "bullets",
     },
     autoplay: {
-      delay: 3000,
+      delay: 7000,
     },
   });
   $(".reviews-slider").mousemove(function (event) {

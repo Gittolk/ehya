@@ -6,3 +6,111 @@
     padding-top: 130px
     border-top: 1px solid #E5EAF4
     margin-bottom: 140px
+  &-content
+    display: flex
+    position: relative
+  &__hashtag
+    background-color: blue
+    padding: 6px 16px
+    border-radius: 200px
+    background-color: #fff
+    background: rgba(54, 179, 126, 0.1)
+    color: #36B37E
+    text-transform: uppercase
+    font-style: normal
+    font-size: 14px
+  &__title
+    margin-top: 28px
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: $title-color
+    margin-bottom: 24px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $font-color
+  &-slider
+    position: static
+    &-nav
+      display: flex
+  &-story
+    max-width: 400px
+    position: relative
+  &-slider
+    max-width: 662px
+  
+  .slider
+    &-button
+      position: absolute
+      z-index: 100
+      width: 56px
+      height: 56px
+      background-color: #fff
+      top: 0
+      left: 0
+      display: block
+      border: 2px solid #5A7184
+      border-radius: 50%
+      &--next
+        left: 80px
+        top: 330px
+      &--prev
+        top: 330px
+      &:hover
+        border: 1px solid $title-color
+.arrow1
+  width: 14px
+  height: 2px
+  background-color: #5A7184
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  &:after
+    content: ''
+    position: absolute
+    width: 10px
+    height: 2px
+    top: -3px
+    right: 6px
+    background-color: #5A7184
+    transform: rotate(-45deg)
+  &::before
+    content: ''
+    position: absolute
+    width: 10px
+    height: 2px
+    top: 3px
+    right: 6px
+    background-color: #5A7184
+    transform: rotate(45deg)
+  &:hover
+    background-color: $title-color
+.arrow2
+  width: 14px
+  height: 2px
+  background-color: #5A7184
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  &:after
+    content: ''
+    position: absolute
+    width: 10px
+    height: 2px
+    top: -3px
+    right: -3px
+    background-color: #5A7184
+    transform: rotate(45deg)
+  &::before
+    content: ''
+    position: absolute
+    width: 10px
+    height: 2px
+    top: 3px
+    right: -3px
+    background-color: #5A7184
+    transform: rotate(-45deg)
