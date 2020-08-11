@@ -35,6 +35,8 @@
     color: $font-color
   &-slider
     position: static
+    margin: 0
+    margin-left: 96px
     &-nav
       display: flex
   &-story
@@ -114,3 +116,38 @@
     right: -3px
     background-color: #5A7184
     transform: rotate(-45deg)
+.swiper
+  &-slide
+    &__item
+      display: flex
+      justify-content: space-between
+    &__box
+      width: 322px 
+      height: 475px
+      position: relative
+    &__discription
+      position: absolute
+      z-index: 30
+      padding: 20px 32px 20px 20px
+      background-color: #FAFDFF
+      top: 294px
+      width: 312px
+      left: 10px
+    &__about
+      font-weight: 600
+      font-size: 22px
+      line-height: 32px
+      color: $title-color
+      margin-top: 0
+    &__link
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      list-style-type: none
+      color: #1565D8
+    &__image
+      width: 312px
+      height: 317px
+      border-radius: 8px
+      object-fit: cover
