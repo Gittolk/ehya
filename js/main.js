@@ -64,22 +64,13 @@ $(document).ready(function () {
     $(this).validate({
       errorClass: "invalid",
       messages: {
-        name: {
-          required: "Enter Your Name*",
-          minlength: "Name will be 3th simbols",
-        },
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
         },
-        phone: {
-          required: "Enter Your phone number",
-        },
       },
     });
   });
-  // маска номера телефона
-  $(".phone").mask("+7(999)-999-99-99");
   // открытие карты за картинкой
   $(".map").mouseover(function () {
     console.log("12321");
