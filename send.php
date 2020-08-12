@@ -10,11 +10,11 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 $phone = $_POST['phone'];
 
-$title = "Заголовок письма";
+$title = "Новый подписчик Ehya";
 $body = "
 <h2>Новый подписчик</h2>
 <b>Почта:</b> $email<br><br>
-;
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -52,4 +52,9 @@ else {$result = "error";}
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
+
+// Отображение результата
+// if(empty($email)){
+// header('location: thankyou.html');}
+// else{
 header('location: thanks.html');
