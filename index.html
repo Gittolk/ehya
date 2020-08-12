@@ -293,10 +293,10 @@
                   />
                 </div></div
             ></a>
-            <a href="#">
-              <div class="tranding-card tranding-card__8">
-                <div class="tranding-more">
-                  <a href="#" class="tranding-more__link">
+            <div class="tranding-card tranding-card__8">
+              <a href="#"
+                ><div class="tranding-more">
+                  <div class="tranding-more__link">
                     <div class="tranding-more__collection">
                       <img
                         src="img/tranding/plus.svg"
@@ -307,10 +307,10 @@
                         >See More Collection</span
                       >
                     </div>
-                  </a>
+                  </div>
                 </div>
-              </div></a
-            >
+              </a>
+            </div>
           </div>
 
           <div id="slide2" class="tranding-images">
@@ -820,35 +820,37 @@
       </div>
     </section>
     <section class="newsletter">
-      <div class="newsletter-wrapper">
-        <div class="newsletter-box">
-          <h2 class="newsletter-title">Join Our Newsletter</h2>
-          <p class="newsletter-text">
-            Just insert your email into the field below. And you will get the
-            updates about fashion & styles from us.
-          </p>
+      <div class="newsletter-container">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-box">
+            <h2 class="newsletter-title">Join Our Newsletter</h2>
+            <p class="newsletter-text">
+              Just insert your email into the field below. And you will get the
+              updates about fashion & styles from us.
+            </p>
+          </div>
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe form"
+          >
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email adress"
+              name="email"
+              required
+            />
+            <img
+              src="img/newsletter/mail-icon.svg"
+              alt=""
+              class="subscribe__mail"
+            />
+            <button class="subscribe__button">Subscribe</button>
+          </form>
         </div>
-        <form
-          action="send.php"
-          method="POST"
-          class="subscribe newsletter__subscribe form"
-        >
-          <input
-            type="email"
-            class="subscribe__input"
-            placeholder="Your email adress"
-            name="email"
-            required
-          />
-          <img
-            src="img/newsletter/mail-icon.svg"
-            alt=""
-            class="subscribe__mail"
-          />
-          <button class="subscribe__button">Subscribe</button>
-        </form>
+        <!-- /.newsletter-wrapper -->
       </div>
-      <!-- /.newsletter-wrapper -->
     </section>
     <footer class="footer">
       <div class="footer-container">
