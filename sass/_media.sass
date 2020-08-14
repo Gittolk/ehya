@@ -283,7 +283,7 @@
       font-size: 48px
       line-height: 60px
       // GROTESK
-      max-width: 440px
+      letter-spacing: -0.5px
     &__text
       font-size: 18px
       line-height: 32px
@@ -301,6 +301,8 @@
       margin-bottom: 60px
     &-images
       margin-bottom: 40px
+    &__big-image
+      width: 320px
     &__title
       margin-top: 0
       max-width: 100%
@@ -315,9 +317,12 @@
       margin-bottom: 80px
     &-navigation
       flex-direction: column
+      margin-bottom: 55px
     &-box
       width: 280px
       height: 350px
+    &__title
+      margin-bottom: 28px
     &-cardsell
       max-width: 260px
       margin-left: 10px
@@ -329,12 +334,16 @@
     &-container
       max-width: 630px
     &-wrapper
-      margin-bottom: 121px
+      margin-bottom: 80px
     &__quote
       margin-bottom: 20px
     &__text
       margin-bottom: 46px
+      margin-top: 25px
   .fashion
+    &__title
+      max-width: 100%
+      margin-bottom: 16px
     &-container
       max-width: 728px
     &-wrapper
@@ -358,6 +367,9 @@
     &-text
       margin-bottom: 56px
   .footer
+    &-wrapper
+      grid-column-gap: 20px
+      grid-row-gap: 48px!important
     &-container
       max-width: 672px
     &-wrapper
@@ -431,6 +443,8 @@
   .header
     &-container
       max-width: 95%
+    &__body
+      padding: 18px 0 36px 0
     &-burger
       &--active
         right: 29px
@@ -473,7 +487,7 @@
     &__title
       text-align: center
       margin-bottom: 20px
-      font-size: 32px
+      font-size: 31px
       line-height: 40px
     &__text
       text-align: center
@@ -589,20 +603,28 @@
     &__name
       width: 170px
       margin: 0 auto
-      margin-bottom: 50px
+      margin-bottom: 45px
     &-wrapper
       margin-bottom: 64px
-    &__quote
-      width: 70px
-      height: 81px
+    &__quoter
+      width: 75px
+      height: 71px
+      margin-bottom: 13px
+    &__text
+      font-size: 18px
+      line-height: 36px
+      margin-top: 0
+      margin-bottom: 24px
   .fashion
     &-container
       max-width: 95%
     &-wrapper
       padding-top: 48px
       margin-bottom: 0
+    &-story
+      max-width: 280px
     &__hashtag
-      padding: 2px 26px
+      padding: 2px 11px
       line-height: 20px
       align-self: center
     &__title
@@ -615,6 +637,7 @@
       font-weight: normal
       font-size: 16px
       line-height: 28px
+
     &-slider
       max-width: 95%
     .slider
@@ -629,11 +652,12 @@
     &-slide
       &__box
         width: 280px
-        height: 407px
-        margin-bottom: 60px
+        height: 277px
+        margin-bottom: 170px
       &__discription
         padding: 20px
         width: 270px
+        top: 256px
       &__about
         font-style: normal
         font-weight: 600
@@ -641,7 +665,8 @@
         line-height: 24px
         max-width: 270px
       &__image
-        width: 270px
+        width: 97%
+        height: 100%
   .newsletter
     height: 414px
     margin-bottom: 48px
