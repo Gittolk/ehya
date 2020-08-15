@@ -114,11 +114,9 @@ $(document).ready(function () {
     },
   });
   $(".reviews-slider").mousemove(function (event) {
-    console.log("123");
     mySwiper.autoplay.stop();
   });
   $(".reviews-slider").mouseout(function (event) {
-    console.log("555");
     mySwiper.autoplay.start();
   });
 });
