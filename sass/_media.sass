@@ -295,8 +295,10 @@
       font-weight: bold
       font-size: 48px
       line-height: 60px
+      margin-top: 25px
       // GROTESK
-      letter-spacing: -0.5px
+      letter-spacing: 0.2px
+      max-width: 430px
     &__text
       font-size: 18px
       line-height: 32px
@@ -320,6 +322,7 @@
       margin-top: 0
       max-width: 100%
       margin-bottom: 18px
+      letter-spacing: 0.2px
     &__text
       margin-top: 0
       margin-bottom: 30px
@@ -337,7 +340,7 @@
     &-card
       width: 280px
     &__title
-      margin-bottom: 28px
+      margin-bottom: 32px
     &-cardsell
       max-width: 260px
       margin-left: 10px
@@ -345,6 +348,7 @@
       justify-content: space-between
   .tabs
     max-width: 100%
+    margin-top: 0
   .reviews
     &-container
       max-width: 630px
@@ -358,25 +362,33 @@
   .fashion
     &__title
       max-width: 100%
-      margin-bottom: 16px
       margin-top: 28px
+      margin-bottom: 0
+    &__text
+      margin-top: 10px
+    &-story
+      margin-bottom: 103px
     &-container
       max-width: 728px
+    &-slider
+      max-width: 682px
     &-wrapper
       padding-top: 79px
       margin-bottom: 44px
     .slider
       &-button
         &--next
-          top: 234px
+          top: 213px
           left: 51%
         &--prev
-          top: 234px
+          top: 213px
           left: 40%
   .swiper
     &-slide
+      &__item
+        justify-content: space-around
       &__image
-        width: 322px
+        width: 96%
       &__discription
         // width: 322px
         padding: 20px 37px 20px 20px
@@ -392,7 +404,7 @@
   .footer
     &-wrapper
       grid-column-gap: 20px
-      grid-row-gap: 32px
+      grid-row-gap: 40px
     &-container
       max-width: 672px
     &-item
@@ -538,6 +550,9 @@
     &__button
       min-width: 233px
       margin-bottom: 22px
+      font-size: 16px
+      line-height: 22px
+      padding: 13px 28px
     &-links
       flex-wrap: wrap
       max-width: 300px
@@ -560,6 +575,7 @@
       margin-bottom: 64px
     &-images
       flex-wrap: wrap
+      margin-bottom: 36px
     &-image
       &--flex
         flex-direction: row
@@ -577,10 +593,12 @@
     &__title
       font-size: 28px
       line-height: 36px
-      text-align: center  
+      text-align: center
+      margin-bottom: 16px
     &__href
       align-items: center
       margin: 0 auto
+      max-width: 210px
     &__link
       font-size: 16px
       line-height: 22px
@@ -591,6 +609,7 @@
       line-height: 28px
       text-align: center
       width: 97%
+      margin-bottom: 24px
   .tranding
     &-container
       max-width: 93%
@@ -655,7 +674,7 @@
     &-wrapper
       margin-bottom: 50px
     &__name
-      width: 200px
+      width: 180px
       margin: 0 auto
       margin-bottom: 45px
     &-wrapper
@@ -669,6 +688,7 @@
       line-height: 36px
       margin-top: 0
       margin-bottom: 24px
+      letter-spacing: 0.12px
   .fashion
     &-container
       max-width: 95%
@@ -713,7 +733,7 @@
       &__discription
         padding: 20px 10px 20px 20px!important
         width: 270px
-        top: 256px
+        top: 247px
       &__about
         font-style: normal
         font-weight: 600
@@ -774,11 +794,11 @@
       padding-right: 20px
   .footer
     &-container
-      max-width: 93%
+      max-width: 92%
     &-wrapper
-      grid-row-gap: 20px!important
+      grid-row-gap: 35px!important
       grid-template-rows: 1fr 1fr
-      grid-column-gap: 20px
+      grid-column-gap: 15px
     &-item
       &__link
         margin-bottom: 15px
@@ -805,20 +825,20 @@
         grid-row: 3/3
         align-items: center
         margin-bottom: 64px
-        margin-top: -20px
+        margin-top: -35px
         margin-left: 0
       &__2
         grid-column: 1/6
       &__3
         grid-column: 7/12
-        margin-left: 15px
+        margin-left: 0
       &__4
         grid-row: 2/3
         grid-column: 1/6
       &__5
         grid-row: 2/3
         grid-column: 7/12
-        margin-left: 15px
+        margin-left: 0
       &__6
         display: none
 @media (max-width: 460px) and (min-width: 320px)
